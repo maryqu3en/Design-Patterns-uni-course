@@ -25,8 +25,7 @@ Seulment les interfaces sans leurs implementations.
 - Différente fabriques concrètes pour chaque famille d'objets.
 - La fabrique abstraite défère la création des objets à ses sousclasses concrètes.
 
-```markdown
-The Abstract Factory pattern provides an interface to create families of related or dependent objects without specifying their concrete classes. This helps in maintaining flexibility and ensuring that the code remains open to extension but closed to modification, adhering to the Open/Closed Principle.
-```
 
-## Singleton 
+***The Abstract Factory pattern provides an interface to create families of related or dependent objects without specifying their concrete classes. This helps in maintaining flexibility and ensuring that the code remains open to extension but closed to modification, adhering to the Open/Closed Principle.***
+
+### Singleton 
