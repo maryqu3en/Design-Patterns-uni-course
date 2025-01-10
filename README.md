@@ -29,3 +29,12 @@ Seulment les interfaces sans leurs implementations.
 ***The Abstract Factory pattern provides an interface to create families of related or dependent objects without specifying their concrete classes. This helps in maintaining flexibility and ensuring that the code remains open to extension but closed to modification, adhering to the Open/Closed Principle.***
 
 ### Singleton 
+Créer un systeme qui controle l'unicité d'une instance pour toute la durée du programme, et fournir un point d'acces global à celle-ci.
+L'idee est que la classe singleton dispose d'un attribut de classe (static) du même type qui pointe vers l'unique instance.
+- Le constructeur est privé pour empecher la création d'instances.
+- L'instance est stockée dans un attribut de classe.
+- Une méthode statique permet d'accéder à l'instance.
+- L'instance est créée la première fois que la méthode statique est appelée.
+- L'attribut est mis a jour
+
+***The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is useful when a single object is required to coordinate actions across a system, such as a shared resource.***
