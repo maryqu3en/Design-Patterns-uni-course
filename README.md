@@ -38,3 +38,17 @@ L'idee est que la classe singleton dispose d'un attribut de classe (static) du m
 - L'attribut est mis a jour
 
 ***The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is useful when a single object is required to coordinate actions across a system, such as a shared resource.***
+
+## Les patrons de structuration
+### Adapter 
+- Permet à des objets avec des interfaces incompatibles de collaborer.
+- Convertir une interface en une autre interface attendue par le client.
+**Raisons d'utilisation**
+- Le système doit intégrer un sous système existant.
+- Ce sous système a une interface non standard par rapport au système.
+- La solution est de masquer cette interface non standard au système et de lui présenter une interface standard.
+- La partie cliente utilise les méthodes de l'adaptateur qui utilise les méthodes du sous-système pour réaliser les opérations correspondantes.
+
+***The Adapter pattern allows objects with incompatible interfaces to collaborate. It acts as a bridge between the two incompatible interfaces, allowing them to work together.***
+
+### Composite
