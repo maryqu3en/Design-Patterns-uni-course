@@ -43,7 +43,7 @@ L'idee est que la classe singleton dispose d'un attribut de classe (static) du m
 ### Adapter 
 - Permet à des objets avec des interfaces incompatibles de collaborer.
 - Convertir une interface en une autre interface attendue par le client.
-**Raisons d'utilisation**
+**Raison d'utilisation**
 - Le système doit intégrer un sous système existant.
 - Ce sous système a une interface non standard par rapport au système.
 - La solution est de masquer cette interface non standard au système et de lui présenter une interface standard.
@@ -52,3 +52,25 @@ L'idee est que la classe singleton dispose d'un attribut de classe (static) du m
 ***The Adapter pattern allows objects with incompatible interfaces to collaborate. It acts as a bridge between the two incompatible interfaces, allowing them to work together.***
 
 ### Composite
+- Permet au client de traiter des objets simples et des compositions d'objets de la même manière.
+- Organiser les objets comme arbre pour représenter une hiérarchie.
+**Raison d'utilisation**
+- Le systeme comporte une hiérarchie de niveau non déterminé.
+- Considerer un groupe d'objets comme un objet unique.
+
+***The Composite pattern allows clients to treat individual objects and compositions of objects uniformly. It composes objects into tree structures to represent part-whole hierarchies.***
+
+## Les patrons de comportement
+### Observer
+- Définir une dépendance de type un-à-plusieurs entre objets de façon que, lorsqu’un objet change d’état, tous ses dépendants sont informés et mis-à-jour automatiquement.
+- Un objet observable (sujet) maintient une liste de ses observateurs (dépendants).
+
+***The Observer pattern defines a one-to-many dependency between objects, so that when one object (subject) changes state, all its dependents (observers) are notified and updated automatically.***
+
+**Push Approach:**
+- The subject (observable) pushes the updated state directly to the observers when the state changes.
+- The observers receive the new state directly without explicitly querying the observable.
+
+**Pull Approach:**
+- The subject (observable) notifies the observers that a state change has occurred.
+- The observers pull the updated state from the subject when they need it.
